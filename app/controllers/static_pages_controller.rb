@@ -7,7 +7,4 @@ class StaticPagesController < ApplicationController
 
   def gallery
   end
-
-  def –no-test-framework
-  end
 end

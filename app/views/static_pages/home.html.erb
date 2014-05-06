@@ -1,2 +1,68 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<%= render "carousel" %>
+
+<!-- Info Container -->
+<div class="container infoContainer client_info_holder animationStart">
+  <div class="row-fluid">
+    <div class="span4 infoHolder section_featured_texts animationStart">
+      <h3 data-number="1">Main Course</h3>
+      <%= image_tag "img.jpg" %>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque labore dicta sed laborum perferendis hic veritatis. At, odit, dignissimos?</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="span4 infoHolder section_featured_texts animationStart">
+      <h3 data-number="2">Reservation</h3>
+      <%= image_tag "img2.jpg" %>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, maxime temporibus eligendi neque quia blanditiis deserunt natus aperiam tempore autem.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="span4 infoHolder section_featured_texts animationStart">
+      <h3 data-number="3">Our Team</h3>
+      <%= image_tag "img3.jpg" %>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ipsa illo fuga officia debitis cumque quo dolore inventore maxime incidunt.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</div>
+
+<!-- Tradition Container -->
+<div class="container tradition">
+  <div class="row-fluid">
+    <div class="span4 animationElementsWrapp">
+
+      <%= image_tag "img/parallax/h1.png", :class => "hitem1", :alt => "Featured Image" %>
+      <%= image_tag "img/parallax/h2.png", :class=>"hitem2",:alt=>"Featured Image"%>
+      <%= image_tag "img/parallax/h3.png", :class=>"hitem3",:alt=>"Featured Image"%>
+      <%= image_tag "img/parallax/t1.png", :class=>"hitem4",:alt=>"Featured Text" %>
+      <%= image_tag "img/parallax/t2.png", :class=>"hitem5",:alt=>"Featured Text" %>
+      <%= image_tag "img/parallax/t3.png", :class=>"hitem6",:alt=>"Featured Text" %>
+    </div>
+    <div class="span4"></div>
+
+    <div class="span4 tradition-section client_info_holder animationStart section_featured_texts">
+      <h3>Tradition is Important</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo non consectetur aspernatur voluptas error ullam quo mollitia incidunt necessitatibus fugiat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, a atque et nisi repellat dolorum distinctio cum laboriosam molestiae tempora fugit excepturi accusamus nulla debitis esse deserunt maiores suscipit dignissimos.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, qui nisi dolore dolor optio sequi.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Early Start Container -->
+<div class="container early-start">
+  <div class="row-fluid">
+    <div class="span6 client_info_holder animationStart section_featured_texts">
+      <h3>Early Start</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, itaque, quis magnam soluta quaerat ut dolor eaque libero minima sunt numquam sequi distinctio aspernatur eius iste. Ipsum, dolor id delectus.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, inventore explicabo sit est incidunt asperiores perspiciatis porro sed fugit voluptatum!</p>
+    </div>
+    <div class="span6 client_info_holder animationStart section_featured_texts">
+      <%= image_tag "johnDoe.png" %>
+    </div>
+  </div>
+</div>
+
+
+
+<%= render "share/gallery_testimonials" %>

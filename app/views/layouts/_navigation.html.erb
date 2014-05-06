@@ -1,0 +1,19 @@
+<div <%= " id='aboutNavigation' ".html_safe unless current_page?(root_path) %> class="container logo-nav">
+  <div class="row-fluid">
+    <div class="span12">
+      <%= link_to image_tag("logo_trans.png", :alt => "California Logo", :width => "273", :height =>"184"), root_path, :title => "Homepage", :class => "logoHolder"%> 
+    </div>
+    <div class="row-fluid">
+      <div class="span12 main-nav">
+        <button class="smallScreenNav">Navigation</button>
+        <ul class="smallNavMenu">
+          <li><%= link_to "Inicio",root_path %> </li>
+          <li><%= link_to "Quienes somos",root_path %></li>
+          <li><%= link_to "Menu", root_path  %></li>
+          <li><%= link_to "Galeria", gallery_path %></li>
+          <li><%= link_to "Contacto", contact_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

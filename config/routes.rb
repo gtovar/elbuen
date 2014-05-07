@@ -4,8 +4,8 @@ Elbuenplato::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
-  get 'contacto' => 'static_page#contact', as: :contact
-  get 'galeria' => 'static_page#gallery', as: :gallery
+  get 'contacto' => 'static_pages#contact', as: :contact
+  get 'galeria' => 'static_pages#gallery', as: :gallery
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

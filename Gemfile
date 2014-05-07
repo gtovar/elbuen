@@ -43,3 +43,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'xray-rails', group: :development
+
+
+
+
+
+
+

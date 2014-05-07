@@ -2,9 +2,9 @@
   <%= stylesheet_link_tag "prettyPhoto","bootstrap", "bootstrap-responsive","styles", media: "all", "data-turbolinks-track" => true %>
 <% end %>
 
-
+<%= content_for :javascript do %>
 <%= javascript_include_tag "bootstrap","smoothscroll","jquery.prettyPhoto","modernizr","transitions","main", media: "all", "data-turbolinks-track" => true %>
-
+<% end %>
 
 <%= render "carousel" %>
 

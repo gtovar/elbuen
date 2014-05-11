@@ -5,7 +5,15 @@ Elbuenplato::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
   get 'contacto' => 'static_pages#contact', as: :contact
-  get 'galeria' => 'static_pages#gallery', as: :gallery
+  get 'platillos' => 'static_pages#dishes', as: :dishes
+  get 'eventos' => 'static_pages#events', as: :events
+  get 'platillos/entradas' => 'dishes#snack', as: :snacks
+  get 'platillos/postres' => 'dishes#dessert', as: :dessert
+  get 'platillos/gourment' => 'dishes#elegant', as: :gourment
+  get 'platillos/fuertes' => 'dishes#main', as: :main
+  get 'platillos/entradas' => 'dishes#salad', as: :entry
+  get 'platillos/ensaladas' => 'dishes#salad', as: :salad
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

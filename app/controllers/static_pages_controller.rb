@@ -5,6 +5,13 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
-  def gallery
+  def dishes
   end
+
+  def about
+  end
+
+  def events
+  end
+
 end

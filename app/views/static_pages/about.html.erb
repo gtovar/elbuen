@@ -1,2 +1,64 @@
-<h1>Home#about</h1>
-<p>Find me in app/views/home/about.html.erb</p>
+<%= content_for :stylesheet do %>
+  <%= stylesheet_link_tag "animations","settings","prettyPhoto","bootstrap", "bootstrap-responsive","styles", media: "all", "data-turbolinks-track" => true %>
+<% end %>
+
+<%= content_for :javascript do %>
+<%= javascript_include_tag "bootstrap","smoothscroll","jquery.prettyPhoto","libs","transitions","home","main", media: "all", "data-turbolinks-track" => true %>
+<% end %>
+
+<!-- Hard Times Container -->
+<div class="container early-start">
+  <div class="row-fluid">
+    <div class="span6 client_info_holder animationStart section_featured_texts">
+      <h3>Hard Times</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, itaque, quis magnam soluta quaerat ut dolor eaque libero minima sunt numquam sequi distinctio aspernatur eius iste. Ipsum, dolor id delectus.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, inventore explicabo sit est incidunt asperiores perspiciatis porro sed fugit voluptatum!</p>
+    </div>
+    <div class="span6 client_info_holder animationStart section_featured_texts">
+      <img alt="" src="http://placehold.it/526x420/ceba9c/1c2831.png" />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- About Section -->
+<div class="container aboutWrapper">
+  <img class="aitem a6" src="img/parallax/10.png" alt="Featured Image">
+  <div class="row-fluid">
+    <div class="span12 about-title client_info_holder animationStart section_featured_texts">
+      <h2>About Us</h2>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="row-fluid about-features client_info_holder animationStart section_featured_texts">
+    <div class="span4">
+      <h3>Lorem ipsum dolor.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repellat eum consequatur voluptatum cumque similique.</p>
+    </div>
+    <div class="span4">
+      <h3>Lorem ipsum dolor.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magnam facilis vitae iste magni tenetur!</p>
+    </div>
+    <div class="span4">
+      <h3>Lorem ipsum dolor.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, doloribus, fugit unde quo eum dignissimos.</p>
+    </div>
+
+    <div class="span12 about-info">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, qui, eum, maiores odio velit at autem aspernatur eius unde id eos perspiciatis! Quos, doloribus assumenda iste error. Dolore ipsam quos pariatur possimus tenetur aspernatur laudantium rerum officiis. Vitae, eius repellendus.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, qui, eum, maiores odio velit at autem aspernatur eius unde id eos perspiciatis! Quos, doloribus assumenda iste error. Dolore ipsam quos pariatur possimus tenetur aspernatur laudantium rerum officiis. Vitae, eius repellendus.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, qui, eum, maiores odio velit at autem aspernatur eius unde id eos perspiciatis! Quos, doloribus assumenda iste error. Dolore ipsam quos pariatur possimus tenetur aspernatur laudantium rerum officiis. Vitae, eius repellendus.</p>
+    </div>
+  </div>
+</div>
+

@@ -1,11 +1,7 @@
-<%= content_for :stylesheet do %>
-  <%= stylesheet_link_tag "animations","settings","prettyPhoto","bootstrap", "bootstrap-responsive","styles", media: "all", "data-turbolinks-track" => true %>
-<% end %>
+<%= render 'share/data' %>
 
-<%= content_for :javascript do %>
-<%= javascript_include_tag "bootstrap","smoothscroll","jquery.prettyPhoto","libs","transitions","home","main", media: "all", "data-turbolinks-track" => true %>
-<% end %>
 <!-- Contact Section -->
+
 <div class="container aboutWrapper reservationsWrapper">
   <div class="row-fluid client_info_holder animationStart section_featured_texts">
     <div class="span12 reservations-title">

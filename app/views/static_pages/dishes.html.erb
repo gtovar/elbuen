@@ -1,13 +1,4 @@
-<%= content_for :stylesheet do %>
-  <%= stylesheet_link_tag "prettyPhoto","bootstrap", "bootstrap-responsive","styles", media: "all", "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag "animations", :id => "animationScript", :rel => "stylesheet" %>
-  <%= stylesheet_link_tag "settings" %>
-<% end %>
-
-<%= content_for :javascript do %>
-<%= javascript_include_tag "bootstrap","smoothscroll","jquery.prettyPhoto","libs","transitions","home","main", media: "all", "data-turbolinks-track" => true %>
-<% end %>
-
+<%= render "share/data" %>
 
 <!-- Gallery Posts -->
 <div class="container gallery-wrapper">

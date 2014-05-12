@@ -1,0 +1,24 @@
+<% if session[:history].to_i.even? %>
+<%= content_for :stylesheet do %>
+  <%= stylesheet_link_tag "prettyPhoto","bootstrap", "bootstrap-responsive","styles", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "animations", :id => "animationScript", :rel => "stylesheet" %>
+  <%= stylesheet_link_tag "settings" %>
+<% end %>
+
+<%= content_for :javascript do %>
+  <%= javascript_include_tag "bootstrap","smoothscroll","jquery.prettyPhoto","libs","transitions","home","main", media: "all", "data-turbolinks-track" => true %>
+<% end %>
+
+<% else %>
+
+<%= content_for :stylesheet do %>
+  <%= stylesheet_link_tag "animations","settings","prettyPhoto","bootstrap", "bootstrap-responsive","styles", media: "all", "data-turbolinks-track" => true %>
+<% end %>
+
+<%= content_for :javascript do %>
+<%= javascript_include_tag "bootstrap","smoothscroll","jquery.prettyPhoto","libs","transitions","home","main", media: "all", "data-turbolinks-track" => true %>
+<% end %>
+
+<% end %>
+
+

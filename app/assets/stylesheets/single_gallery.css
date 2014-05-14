@@ -1,0 +1,104 @@
+    #wrapper {
+      position: relative;
+      width: 100%;
+    }
+    #carousel-wrapper {
+      padding-bottom: 10px;
+      position: relative;
+    }
+    #carousel, #thumbs {
+      overflow: hidden;
+    }
+
+    #carousel-wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    #carousel-wrapper .caroufredsel_wrapper {
+      -webkit-box-shadow: 10px 10px 10px 15px rgba(0,0,0, 0.4);
+      box-shadow: 10px 10px 10px 15px rgba(0,0,0, 0.4);
+    }
+
+    #carousel span, #carousel img,
+    #thumbs a, #thumbs img  {
+      display: block;
+      float: left;
+    }
+    #carousel span, #carousel a,
+    #thumbs span, #thumbs a {
+      position: relative;
+    }
+    #carousel img,
+    #thumbs img {
+      border: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #carousel img.glare,
+    #thumbs img.glare {
+      width: 102%;
+      height: auto;
+    }
+
+    #carousel span {
+      width: 554px;
+      height: 313px;
+      border: 10px solid white;
+    }
+
+
+    #thumbs-wrapper {
+      -webkit-box-shadow: 10px 10px 15px 15px rgba(0,0,0, 0.3);
+      box-shadow: 10px 10px 15px 15px rgba(0,0,0, 0.3);
+      margin-top: 50px;
+      background-color: #fff;
+      padding: 20px 40px;
+      position: relative;
+    }
+    #thumbs a {
+      width: 150px;
+      height: 100px;
+      margin: 0 10px;
+      overflow: hidden;
+    }
+    #thumbs a:hover, #thumbs a.selected {
+      border-color: #566;
+    }
+
+    #wrapper img#shadow {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+
+    #prev {
+      background-image: url(img/gui/arrow-left.png);
+    }
+
+    #next {
+      background-image: url(img/gui/arrow-right.png);
+    }
+
+    #prev, #next {
+      background-repeat: no-repeat;
+      display: block;
+      width: 15px;
+      height: 29px;
+      margin-top: -7px;
+      position: absolute;
+      top: 50%;
+    }
+    #prev {
+      left: 15px;
+    }
+    #next {
+      right: 15px;
+    }     
+    #prev.disabled, #next.disabled {
+      display: none !important;
+    }
+

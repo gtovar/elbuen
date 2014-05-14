@@ -1,24 +1,13 @@
-<% if session[:history].to_i.even? %>
 <%= content_for :stylesheet do %>
-  <%= stylesheet_link_tag "prettyPhoto","bootstrap", "bootstrap-responsive","styles", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "prettyPhoto","bootstrap", "bootstrap-responsive","styles" %>
   <%= stylesheet_link_tag "animations", :id => "animationScript", :rel => "stylesheet" %>
   <%= stylesheet_link_tag "settings" %>
 <% end %>
 
 <%= content_for :javascript do %>
-  <%= javascript_include_tag "bootstrap","smoothscroll","jquery.prettyPhoto","libs","transitions","home","main", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "modernizr", "jquery", "jquery.themepunch.revolution.min","bootstrap","smoothscroll","jquery.prettyPhoto" %>
+  <%= javascript_include_tag "libs", :id => "libsScript" %>
+  <%= javascript_include_tag "transitions", :id => "transitionScript" %>
+  <%= javascript_include_tag "home","main" %>
 <% end %>
-
-<% else %>
-
-<%= content_for :stylesheet do %>
-  <%= stylesheet_link_tag "animations","settings","prettyPhoto","bootstrap", "bootstrap-responsive","styles", media: "all", "data-turbolinks-track" => true %>
-<% end %>
-
-<%= content_for :javascript do %>
-<%= javascript_include_tag "bootstrap","smoothscroll","jquery.prettyPhoto","libs","transitions","home","main", media: "all", "data-turbolinks-track" => true %>
-<% end %>
-
-<% end %>
-
 

@@ -1,5 +1,7 @@
 <%= render "share/data" %>
-
+<%= content_for :javascript do %>
+  <%= javascript_include_tag "home" %>
+<% end %>
 <%= render "carousel" %>
 
 <!-- Info Container -->

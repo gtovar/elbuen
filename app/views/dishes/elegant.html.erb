@@ -1,11 +1,11 @@
 <%= render "share/data" %>
 <%= content_for :stylesheet do %>
-<%= stylesheet_link_tag "single_gallery", media: "all", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "single_gallery" %>
 <% end %>
 
 <%= content_for :javascript do %>
-  <%= javascript_include_tag "jquery","jquery.carouFredSel-6.0.4-packed", media: "all", "data-turbolinks-track" => true %>
 
+  <%= javascript_include_tag "jquery.carouFredSel-6.0.4-packed" %>
 
         <script type="text/javascript">
           $(function() {
@@ -48,7 +48,7 @@
               return false;
             });
 
-          }).(jQuery);
+          });
         </script>
 
 

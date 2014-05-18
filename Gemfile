@@ -45,7 +45,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'xray-rails', group: :development
-
+gem 'newrelic_rpm'
 
 
 

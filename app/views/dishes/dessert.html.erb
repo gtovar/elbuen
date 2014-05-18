@@ -1,11 +1,67 @@
 <%= render "share/data" %>
+<%= content_for :stylesheet do %>
+<%= stylesheet_link_tag "single_gallery" %>
+<% end %>
+
+<%= content_for :javascript do %>
+
+  <%= javascript_include_tag "jquery.carouFredSel-6.0.4-packed" %>
+
+        <script type="text/javascript">
+          $(function() {
+
+            $('#carousel').carouFredSel({
+              responsive: true,
+              circular: false,
+              auto: false,
+              items: {
+                visible: 1,
+                width: 200,
+                height: '56%'
+              },
+              scroll: {
+                fx: 'directscroll'
+              }
+            });
+
+            $('#thumbs').carouFredSel({
+              responsive: true,
+              circular: false,
+              infinite: false,
+              auto: false,
+              prev: '#prev',
+              next: '#next',
+              items: {
+                visible: {
+                  min: 2,
+                  max: 4
+                },
+                width: 202,
+                height: '66%'
+              }
+            });
+
+            $('#thumbs a').click(function() {
+              $('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+              $('#thumbs a').removeClass('selected');
+              $(this).addClass('selected');
+              return false;
+            });
+
+          });
+        </script>
+
+
+
+<% end %>
+      
 <div class="container single-gallery">
   <div class="row-fluid">
     <div id="wrapper">
       <div id="carousel-wrapper">
-        <img id="shadow" src="img/gui/carousel_shadow.png" />
+        <%= image_tag "img/gui/carousel_shadow.png", :id => "shadow" %>
         <div id="carousel">
-          <span id="slide-1"><img src="http://placehold.it/1024x576/ceba9c/1c2831.png" alt="Featured Image" /></span>
+          <span id="slide-1"><img src="/assets/dishes/gourmet/crepas_1024.jpg" alt="Chiles estilo nogada" /></span>
           <span id="slide-2"><img src="http://placehold.it/1024x576/ceba9c/1c2831.png" alt="Featured Image" /></span>
           <span id="slide-3"><img src="http://placehold.it/1024x576/ceba9c/1c2831.png" alt="Featured Image" /></span>
           <span id="slide-4"><img src="http://placehold.it/1024x576/ceba9c/1c2831.png" alt="Featured Image" /></span>
@@ -19,7 +75,7 @@
       </div>
       <div id="thumbs-wrapper">
         <div id="thumbs">
-          <a href="#slide-1" class="selected"><img src="http://placehold.it/216x143/ceba9c/1c2831.png" alt="Featured Image" /></a>
+          <a href="#slide-1" class="selected"><img src="/assets/dishes/gourmet/crepas_216.jpg" alt="Chiles estilo nogada" /></a>
           <a href="#slide-2"><img src="http://placehold.it/216x143/ceba9c/1c2831.png" alt="Featured Image" /></a>
           <a href="#slide-3"><img src="http://placehold.it/216x143/ceba9c/1c2831.png" alt="Featured Image" /></a>
           <a href="#slide-4"><img src="http://placehold.it/216x143/ceba9c/1c2831.png" alt="Featured Image" /></a>

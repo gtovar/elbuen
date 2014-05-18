@@ -1751,6 +1751,9 @@ Gallery
 	background-color: transparent;
 }
 
+.gallery-postinfo > button a {
+  color: #fff;
+}
 .gallery-wrapper .row-fluid .gallery-post {
 	margin-left: 0;
 }

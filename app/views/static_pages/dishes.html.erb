@@ -32,15 +32,15 @@
         </div>
         <p>No hay mejor manera de acabar una buena cena que saboreando un delicioso postre. 
         Si quieres sorprender a tus invitados toma nota de las últimas tendencias en postres. </p>
-        <button><%= link_to t(:open_gallery) %></button>
+        <button><%= link_to t(:open_gallery), dessert_path %></button>
       </div>
     </div>
 
 
 
     <div class="span6 client_info_holder animationStart section_featured_texts gallery-post">
-      <a class="paperStack" href="single-gallery.html">
-        <img src="http://placehold.it/428x328/ceba9c/1c2831.png" alt="Featured Image">
+      <a class="paperStack" href="platillos/fuertes">
+        <img src="assets/dishes/mains/medallon_de_pollo_en_salsa_de_cilantro_428.jpg" alt="Medallon de pollo en salsa de cilantro">
       </a>
       <div class="gallery-postinfo">
         <h3><%= link_to t(:main), main_path %></h3>
@@ -50,7 +50,7 @@
         <p>Sin importar sì es filete de res, pescado o pollo, las personas buscan comer algo delicioso en su evento, fiesta, graduacion, etc.
         lo que se debe de tomar en cuenta es que tenga armonìa con lo que ofreciste anteriormente,
         por algo le llaman tambièn plato principal.</p>
-        <button><%= link_to t(:open_gallery) %></button>
+        <button><%= link_to t(:open_gallery), main_path %></button>
       </div>
     </div>
 
@@ -58,18 +58,74 @@
 
 
     <div class="span6 client_info_holder animationStart section_featured_texts gallery-post">
-      <a class="paperStack" href="single-gallery.html">
-        <img src="http://placehold.it/428x328/ceba9c/1c2831.png" alt="Featured Image">
+      <a class="paperStack" href="platillos/ensaladas">
+        <img src="assets/dishes/salads/ensalada_tres_lechugas_428.jpg" alt="Ensalda tres lechugas">
       </a>
       <div class="gallery-postinfo">
-        <h3><a href="single-gallery.html">Gallery Post Title</a></h3>
+        <h3><%= link_to t(:salads), salad_path %></h3>
         <div class="postinfo">
-          <p>12.07.2014</p>
+          <p>19.05.2014</p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, numquam, a ducimus minus et nobis sequi dolorum laudantium facilis reprehenderit illum voluptates velit dolor possimus sunt? Praesentium sit obcaecati amet?</p>
-        <button>Open Gallery</button>
+        <p>
+        Las ensaladas, nos hace ver la complejidad a la que pueden llegar este tipo de alimentos, pese a la simplicidad de su apariencia estos platillos es tendencia en xv para la sección de jóvenes o si los invitados a tu evento requieren algo más fresco light.</p>
+        <button><%= link_to t(:open_gallery), salad_path %></button>
       </div>
     </div>
+
+
+    <div class="span6 client_info_holder animationStart section_featured_texts gallery-post">
+      <a class="paperStack" href="platillos/bocadillos">
+        <img src="assets/dishes/snacks/charola_de_bocadillos_428.jpg" alt="Charola de bocadillos">
+      </a>
+      <div class="gallery-postinfo">
+        <h3><%= link_to t(:snacks), snacks_path %></h3>
+        <div class="postinfo">
+          <p>19.05.2014</p>
+        </div>
+        <p>
+        Los bocadillos con el tiempo ha evolucionado hasta convertirse ícono de cualquier evento o reunión en modo de tentempié o aperitivo, que suele consistir en una trozo de pan de tamaño variable, abierto en dos mitades, y entre cuyas mitades se coloca cualquier alimento diferente al propio pan; como embutido, queso, pescado e incluso frutas.
+        </p>
+        <button><%= link_to t(:open_gallery), snacks_path %></button>
+      </div>
+    </div>
+
+
+
+
+    <div class="span6 client_info_holder animationStart section_featured_texts gallery-post">
+      <a class="paperStack" href="platillos/cremas">
+        <img src="assets/dishes/creams/crema_de_brocoli_con_crotones_428.jpg" alt="Crema de brocoli con crotones">
+      </a>
+      <div class="gallery-postinfo">
+        <h3><%= link_to t(:creams), creams_path %></h3>
+        <div class="postinfo">
+          <p>19.05.2014</p>
+        </div>
+        <p>
+        Platillo de entrada que consta de una familia de preparaciones de varios vegetales que dan como resultado una consistencia cremosa, y la puedas deleitar en su variedad de sabores, para que tu evento cuente con un Banquete ideal y tus invitados se lleven un buen sabor a su paladar.
+        </p>
+        <button><%= link_to t(:open_gallery), creams_path %></button>
+      </div>
+    </div>
+
+
+
+    <div class="span6 client_info_holder animationStart section_featured_texts gallery-post">
+      <a class="paperStack" href="platillos/pates">
+        <img src="assets/dishes/pates/pate_de_la_casa_428.jpg" alt="Patés de la casa">
+      </a>
+      <div class="gallery-postinfo">
+        <h3><%= link_to "Pates", pates_path %></h3>
+        <div class="postinfo">
+          <p>19.05.2014</p>
+        </div>
+        <p>
+        Platillo considerado como aperitivo generalmente  untables, elaborado de queso o distintos ingredientes y variedad de presentaciones para cualquier exigencia de cliente  e invitado.
+        </p>
+        <button><%= link_to t(:open_gallery), pates_path %></button>
+      </div>
+    </div>
+
 
 
 

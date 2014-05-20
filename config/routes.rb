@@ -8,11 +8,12 @@ Elbuenplato::Application.routes.draw do
   get 'platillos' => 'static_pages#dishes', as: :dishes
   get 'eventos' => 'static_pages#events', as: :events
   get 'quienes-somos' => 'static_pages#about', as: :about
-  get 'platillos/entradas' => 'dishes#snack', as: :snacks
+  get 'platillos/bocadillos' => 'dishes#snack', as: :snacks
+  get 'platillos/cremas' => 'dishes#creams', as: :creams
   get 'platillos/postres' => 'dishes#dessert', as: :dessert
   get 'platillos/gourmet' => 'dishes#elegant', as: :gourmet
   get 'platillos/fuertes' => 'dishes#main', as: :main
-  get 'platillos/entradas' => 'dishes#salad', as: :entry
+  get 'platillos/pates' => 'dishes#pates', as: :pates
   get 'platillos/ensaladas' => 'dishes#salad', as: :salad
 
 

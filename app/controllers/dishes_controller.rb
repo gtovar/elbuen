@@ -16,4 +16,11 @@ class DishesController < ApplicationController
 
   def salad
   end
+
+  def cream
+  end
+
+  def pate
+  end
+
 end

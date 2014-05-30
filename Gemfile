@@ -46,7 +46,7 @@ end
 
 gem 'xray-rails', group: :development
 gem 'newrelic_rpm'
-
+gem 'mail_form' 
 
 
 

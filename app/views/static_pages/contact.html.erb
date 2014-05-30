@@ -12,41 +12,29 @@
   <div class="divider divider_contact"></div>
 
   <div class="row-fluid reservations-features client_info_holder animationStart section_featured_texts">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, beatae maiores reiciendis eos autem inventore laboriosam accusamus eius quod quo laudantium officiis provident fugiat magni earum accusantium ipsa ea quidem!</p>
-
+    <p>Contactanos atravez de este formulario, escribenos alguna opnion, pregunta, duda o comentario y con gusto te atenderemos o bien nuestros telefonos 81023413, 8111530834 o 8111899317 y nuestras oficinas en 110 Casique, Col. Barrio el parque, Monterrey. </p>
     <form action="#" method="post" class="client_info_holder animationStart section_featured_texts">
       <div class="row-fluid inputWrapper">
         <div class="span6">
           <p>
-          <label for="name">First Name</label>
-          <input type="text" name="name" id="name">
-          </p>
-
-          <p>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
+          <label for="name"><%= t :name %></label>
+          <%= text_field_tab "nombre", nil, :id=>"name", :placeholder => "Tu nombre" %>
           </p>
         </div>
         <div class="span6">
           <p>
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name">
+          <label for="last-name">Email</label>
+          <%= text_field_tab "email", nil, :id=>"email", :placeholder => "Tu correo" %>
           </p>
-
-          <p>
-          <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject">
-          </p>
-
         </div>
 
         <div class="row-fluid">
           <div class="span12 messageContainer">
             <label for="message">Message</label>
-            <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+            <%= text_area_tag "message", nil, :id => "mesaage", :placeholder => "Tus dudas o comentarios, etc.", :cols => "30", :rows => "10" %>
           </div>
         </div>
-        <button type="submit">Send Message</button>
+         <%= submit_tag "Enviar" %> 
       </div>
     </form>
   </div>

@@ -12,29 +12,30 @@
   <div class="divider divider_contact"></div>
 
   <div class="row-fluid reservations-features client_info_holder animationStart section_featured_texts">
-    <p>Contactanos atravez de este formulario, escribenos alguna opnion, pregunta, duda o comentario y con gusto te atenderemos o bien nuestros telefonos 81023413, 8111530834 o 8111899317 y nuestras oficinas en 110 Casique, Col. Barrio el parque, Monterrey. </p>
-    <form action="#" method="post" class="client_info_holder animationStart section_featured_texts">
+    <p>Contactanos atravez de este formulario, escribenos alguna opnion, pregunta, duda o comentario y con gusto te atenderemos o bien a nuestros telefonos 81023413, 8111530834 o 8111899317 </p>
+    <%= form_tag(contact_path, :method => "get", :multipart => false,:class => "client_info_holder animationStart section_featured_texts") do %>
       <div class="row-fluid inputWrapper">
         <div class="span6">
           <p>
           <label for="name"><%= t :name %></label>
-          <%= text_field_tab "nombre", nil, :id=>"name", :placeholder => "Tu nombre" %>
+          <%= text_field_tag "nombre", nil, :id=>"name", :placeholder => "Tu nombre" %>
           </p>
         </div>
         <div class="span6">
           <p>
           <label for="last-name">Email</label>
-          <%= text_field_tab "email", nil, :id=>"email", :placeholder => "Tu correo" %>
+          <%= text_field_tag "email", nil, :id=>"email", :placeholder => "Tu correo" %>
           </p>
         </div>
 
         <div class="row-fluid">
           <div class="span12 messageContainer">
             <label for="message">Message</label>
-            <%= text_area_tag "message", nil, :id => "mesaage", :placeholder => "Tus dudas o comentarios, etc.", :cols => "30", :rows => "10" %>
+            <%= text_area_tag "message", nil, :id => "message", :placeholder => "Tus dudas o comentarios, etc.", :cols => "30", :rows => "10" %>
           </div>
         </div>
-         <%= submit_tag "Enviar" %> 
+        <%= submit_tag "Enviar" %> 
+      <%end%>
       </div>
     </form>
   </div>

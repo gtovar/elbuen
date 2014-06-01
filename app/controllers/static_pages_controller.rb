@@ -14,6 +14,14 @@ class StaticPagesController < ApplicationController
           @gilberto = Twilio::REST::Client.new account_sid, auth_token
           @client.account.sms.messages.create({
               :from => '+16096442390', 
+              :to => '+5218111899317', 
+              :body => "El buen plato => #{ truncate(params["message"], length: 100)}"
+          })
+
+          sleep 2
+
+          @client.account.sms.messages.create({
+              :from => '+16096442390', 
               :to => '+5218113129230', 
               :body => "El buen plato => #{ truncate(params["message"], length: 100)}"
           })

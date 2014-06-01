@@ -5,7 +5,7 @@
 <div class="container aboutWrapper reservationsWrapper">
   <div class="row-fluid client_info_holder animationStart section_featured_texts">
     <div class="span12 reservations-title">
-      <h2>Contact</h2>
+      <h2><%= t :contact %></h2>
     </div>
   </div>
 
@@ -30,7 +30,7 @@
 
         <div class="row-fluid">
           <div class="span12 messageContainer">
-            <label for="message">Message</label>
+            <label for="message"><%= t :message %></label>
             <%= text_area_tag "message", nil, :id => "message", :placeholder => "Tus dudas o comentarios, etc.", :cols => "30", :rows => "10" %>
           </div>
         </div>

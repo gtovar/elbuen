@@ -13,7 +13,13 @@ class StaticPagesController < ApplicationController
           @client.account.sms.messages.create({
               :from => '+16096442390', 
               :to => '+5218113129230', 
-              :body => "El buen plato recibio un email,=> #{params["message"]}"
+              :body => "El buen plato => #{truncate(params["message"], length: 100)}"
+          })
+
+          @client.account.sms.messages.create({
+              :from => '+16096442390', 
+              :to => '+5218111899317', 
+              :body => "El buen plato recibio un email => #{truncate(params["message"], length: 100 )}"
           })
           redirect_to root_path
         end

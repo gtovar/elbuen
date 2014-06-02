@@ -20,10 +20,10 @@ class StaticPagesController < ApplicationController
         }
 
         numbers.each do |key,value|
-          client.account.sms.messages.create({
-            :from => '+16096442390', 
+          client.account.messages.create({
+            :from => from, 
             :to => key, 
-            :body => "El buen plato => #{ truncate(params["message"], length: 100) }, #{value} "
+            :body => "El buen plato => #{value}"
           })
         end
 

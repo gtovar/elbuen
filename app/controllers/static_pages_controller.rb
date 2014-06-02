@@ -26,7 +26,7 @@ class StaticPagesController < ApplicationController
             client.account.messages.create(
               :from => from,
               :to => key,
-              :body => "Hey #{value}, Monkey party at 6PM. Bring Bananas!"
+              :body => "Hey #{value}, mensaje de prueba"
             ) 
             puts "Sent message to #{value}"
           end

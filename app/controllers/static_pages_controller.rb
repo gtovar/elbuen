@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
 
           friends = {
             "+5218113129230" => "Gilberto",
-            "+5218110114617" => "Adriana"
+            "+5218111929631" => "Meybol"
           }
           friends.each do |key, value|
             client.account.messages.create(

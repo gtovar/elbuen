@@ -10,6 +10,7 @@ class StaticPagesController < ApplicationController
       if c.deliver
 
         begin
+
           account_sid = ENV['TWILIO_ACCOUNT_SID']
           auth_token  = ENV['TWILIO_AUTH_TOKEN']
           client = Twilio::REST::Client.new account_sid, auth_token
@@ -26,7 +27,7 @@ class StaticPagesController < ApplicationController
               :to => key,
               :body => "Tienes un email de #{params["name"]} y dice, #{truncate(params["message"], length: 100)}"
             ) 
-            puts "Sent message to #{value}"
+            puts "\n\n Sent message to #{value}"
           end
         rescue Twilio::REST::RequestError => e
           puts e.message

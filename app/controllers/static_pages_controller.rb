@@ -15,8 +15,8 @@ class StaticPagesController < ApplicationController
         from = '+16096442390'
 
         numbers = {
-          '+5218111899317' => "Uno",
-          '+5218111899317' => "Dos"
+          '+5218113129230' => "Uno",
+          '+5218113129230' => "Dos"
         }
 
         numbers.each do |key,value|
@@ -25,6 +25,7 @@ class StaticPagesController < ApplicationController
             :to => key, 
             :body => "El buen plato => #{value}"
           })
+          sleep 15
         end
 
         redirect_to root_path

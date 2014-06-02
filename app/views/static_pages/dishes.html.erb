@@ -1,6 +1,6 @@
 <%= title(:dishes) %>
 <%= render "share/data" %>
-<%= content_tag :metadata do %>
+<%= content_for :metadata do %>
   <meta property="og:url" content="<%= dishes_url %>" /> 
   <meta property="og:title" content="<%= t :dishes %>" /> 
   <meta property="og:description" content="Descubre nuestros platillos para tu evento, cremas, postres, 3 tiempos, etc. Contanctanos, pregunta por precios otros platillos,  cualquier duda o comentario a contacto@elbuenplato.com nuestros telefonos 81023413, 8111530834 o 8111899317" /> 

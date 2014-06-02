@@ -12,9 +12,9 @@
   <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
   <%= yield :stylesheet %>
   <%= csrf_meta_tags %>
+  <%= yield :metadata %>
 </head>
 <body>
-  <%= yield :meta_data %>
   <%= render "layouts/parallax_images" %>
   <%= render "layouts/header_bar" %>
   <%= render "layouts/navigation" %>

@@ -1,20 +1,20 @@
-Elbuenplato::Application.routes.draw do
+Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#home'
-  get 'contacto' => 'static_pages#contact', as: :contact
-  get 'platillos' => 'static_pages#dishes', as: :dishes
-  get 'eventos' => 'static_pages#events', as: :events
-  get 'quienes-somos' => 'static_pages#about', as: :about
-  get 'platillos/bocadillos' => 'dishes#snack', as: :snacks
-  get 'platillos/cremas' => 'dishes#cream', as: :creams
-  get 'platillos/postres' => 'dishes#dessert', as: :dessert
-  get 'platillos/gourmet' => 'dishes#elegant', as: :gourmet
-  get 'platillos/fuertes' => 'dishes#main', as: :main
-  get 'platillos/pates' => 'dishes#pate', as: :pates
-  get 'platillos/ensaladas' => 'dishes#salad', as: :salad
+    root 'static_pages#home'
+    get 'contacto' => 'static_pages#contact', as: :contact
+    get 'platillos' => 'static_pages#dishes', as: :dishes
+    get 'eventos' => 'static_pages#events', as: :events
+    get 'quienes-somos' => 'static_pages#about', as: :about
+    get 'platillos/bocadillos' => 'dishes#snack', as: :snacks
+    get 'platillos/cremas' => 'dishes#cream', as: :creams
+    get 'platillos/postres' => 'dishes#dessert', as: :dessert
+    get 'platillos/gourmet' => 'dishes#elegant', as: :gourmet
+    get 'platillos/fuertes' => 'dishes#main', as: :main
+    get 'platillos/pates' => 'dishes#pate', as: :pates
+    get 'platillos/ensaladas' => 'dishes#salad', as: :salad
 
 
   # Example of regular route:

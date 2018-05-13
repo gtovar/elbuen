@@ -17,8 +17,6 @@ login: &login
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: postgres
-  password: admon
   host: localhost
 
 development:
